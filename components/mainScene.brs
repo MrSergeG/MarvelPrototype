@@ -58,29 +58,10 @@ function focusChanged()
     end if
 end function
 
-function rowFocused()
-    '        print "grid row "; m.zoomRowList.rowFocused; " focused"
-end function
-
-function rowSelected()
-    '        print "grid row "; m.zoomRowList.rowSelected; " selected"
-end function
-
-function updateCurrFocusRow()
-    'm.currFocusRowLabel.text = "currFocusRow: " + m.zoomRowList.currFocusRow.toStr()
-end function
-
-function scrollingStatusChanged()
-end function
-
 function rowItemFocusedChanged()
     item = m.zoomRowList.content.getChild(m.zoomRowList.rowItemFocused[0])
     title = item.getchild(m.zoomRowList.rowItemFocused[1]).title
     m.comicTitleLabel.text = title
-   
-end function
-
-function rowFocusedChanged()
 end function
 
 sub playVideo()
@@ -105,7 +86,6 @@ sub setComicViewVisible()
 end sub
 
 function onKeyEvent(key as string, press as boolean) as boolean
-    ? "Main->onKey->" + key
     handled = false
 
     if key = "OK"
@@ -113,7 +93,6 @@ function onKeyEvent(key as string, press as boolean) as boolean
             playVideo()
         end if
 
-        'item = m.zoomRowList.content.getChild(m.zoomRowList.rowItemFocused[0])
         setCharacterViewVisible()
 
         handled = true

@@ -38,25 +38,4 @@ sub loadContent()
             m.top.content.appendChild(row)
         end for
     end if
-    ' if m.top.content <> invalid then
-    '     next169Index = 0
-    '     num169ContentItems = 16
-
-    '     for i = 0 to numRows - 1
-    '         row = CreateObject("rosgnode", "ContentNode")
-    '         row.title = "MOVIE ROW " + i.toStr()
-
-    '         numItems = 10
-
-    '         for j = 0 to numItems - 1
-    '             item = row.CreateChild("ContentNode")
-    '             item.title = "Item " + j.ToStr()
-
-    '             item.hdposterurl = "pkg:/images/16x9/" + next169index.toStr() + ".jpeg"
-    '             next169index = (next169index + 1) mod num169ContentItems
-
-    '         end for
-    '         m.top.content.appendChild(row)
-    '     end for
-    ' end if
 end sub
