@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="MainScene" extends="Scene">
+
+    <script type="text/brightscript" uri="mainScene.brs" />
+
+    <children>
+        <group id="gridView" translation="[80,20]">
+            <comicGridView id="comicGridView" />
+            <characterListView id="characterListView" />
+        </group>
+    </children>
+
+</component>

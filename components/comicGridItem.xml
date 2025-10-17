@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<component name="ComicGridItem" extends="Group">
+
+<script type="text/brightscript" uri="comicGridItem.brs" />
+
+<interface>
+  <field id="width" type="float" alias="itemPoster.width" />
+  <field id="height" type="float" alias="itemPoster.height" />
+  <field id="itemContent" type="node" onChange="itemContentChanged"/>
+</interface>
+
+<children>
+<Poster id="itemPoster" />
+</children>
+
+</component>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="LoadContentTask" extends="Task">
+ 	
+   <script type="text/brightscript" uri="rsg_utils.brs" />
+   <script type="text/brightscript" uri="rootHandler.brs" />
+   <script type="text/brightscript" uri="loadContentTask.brs" />
+
+    <interface>
+       <field id="content" type="node" />
+    </interface>
+
+</component>

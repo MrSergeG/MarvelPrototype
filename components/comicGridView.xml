@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="comicGridView" extends="LayoutGroup">
+
+    <script type="text/brightscript" uri="comicGridView.brs" />
+
+    <children>
+        <group id="gridView">
+            <Label id="comicDescriptionLabel" text="Loading..." translation="[80,20]"/>
+            <ZoomRowList id="comicZoomRowList" itemComponentName="ComicGridItem" />
+        </group>
+    </children>
+
+</component>
