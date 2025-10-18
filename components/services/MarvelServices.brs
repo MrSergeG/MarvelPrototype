@@ -1,4 +1,3 @@
-' ********** Copyright 2019 Roku Corp.  All Rights Reserved. **********
 function GetServiceCongfig() as Object
 return {
         publicApiKey: "225a6641c893e5d08a0db02a3ee4c4eb",
@@ -25,11 +24,42 @@ function generateServiceHash() as String
     return digest.Final()
 end function
 
-sub GetContent()
-    GetContentByDate("2023-01-01%2C2024-01-02", "2023-2024")
-    GetContentByDate("2022-01-01%2C2023-01-02", "2022-2023")
-    GetContentByDate("2021-01-01%2C2022-01-02", "2021-2022")
-end sub
+function GetCharacterMockData() as object
+   return [{ 
+        title: "A.I.M.",
+        description: "AIM is a terrorist organization bent on destroying the world.",
+        hdposterurl: "http://i.annihil.us/u/prod/marvel/i/mg/6/20/52602f21f29ec.jpg" 
+        },
+        { 
+        title: "Abomination",
+        description: "Formerly known as Emil Blonsky, a spy of Soviet.",
+        hdposterurl: "http://i.annihil.us/u/prod/marvel/i/mg/9/50/4ce18691cbf04.jpg"
+        },
+        {
+        title: "A-Bomb (HAS)",
+        description: "Rick Jones has been Hulk's best bud ",
+        hdposterurl: "http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg",
+        },
+        {
+        title: "Agent X (Nijo)",
+        description: "riginally a partner of the mind-altering assassin Black Swan",
+        hdposterurl: "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg",
+        },
+        {
+        title: "Alex Wilder",
+        description: "Despite being the only one of the Runaways",
+        hdposterurl: "http://i.annihil.us/u/prod/marvel/i/mg/2/c0/4c00377144d5a.jpg",
+        },
+        {
+        title: "Amun",
+        description: "Amun is a ruthless teenage assassin, employed by the Sisterhood",
+        hdposterurl: "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg",
+        }
+        ]
+    ' GetContentByDate("2023-01-01%2C2024-01-02", "2023-2024")
+    ' GetContentByDate("2022-01-01%2C2023-01-02", "2022-2023")
+    ' GetContentByDate("2021-01-01%2C2022-01-02", "2021-2022")
+    end function
 
 function GetComicList(dateRange as string, limit as integer) as String
     hash = generateServiceHash()

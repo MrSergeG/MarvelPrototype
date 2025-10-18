@@ -26,12 +26,12 @@
 </script>
 
 <children> 
-<LayoutGroup layoutDirection="horiz" vertAlignment="center" itemSpacings="20" translation="[0,30]" >
+<LayoutGroup layoutDirection="horiz" vertAlignment="center" itemSpacings="20" translation="[0,35]" >
     <Poster id="itemImage" translation="[5,0]" width="120" height="70" />
 
     <LayoutGroup layoutDirection="vert" horizAlignment="left" itemSpacings="0" >
         <Label id="itemText" font="font:MediumSystemFont" color="0xffff00ff" />
-        <Label id="item2Text"  font="font:TinySystemFont" color="white" />
+        <Label id="item2Text"  font="font:TinySystemFont" color="0xffffffff" />
     </LayoutGroup>
 </LayoutGroup>
 

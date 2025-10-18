@@ -2,6 +2,8 @@
 
 <component name="characterListView" extends="Group">
 
+<script type="text/brightscript" uri="services/rsg_utils.brs" />
+<script type="text/brightscript" uri="services/MarvelServices.brs" />
 <script type="text/brightscript" uri="characterListView.brs" />
 
 <children>
