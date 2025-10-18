@@ -14,18 +14,15 @@ function getMarkupListData() as object
     hdposterurl = "http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg"
     description = "Rick Jones has been Hulk's..."
 
-    for i = 1 to 6
+    mockData = GetCharacterMockData()
+
+    for i = 0 to 5
         dataItem = data.CreateChild("CharacterListItemData")
-        dataItem.posterUrl = hdposterurl
-        dataItem.labelText = title
-        dataItem.label2Text = description
+        dataItem.posterUrl = mockData[i].hdposterurl
+        dataItem.labelText = mockData[i].title
+        dataItem.label2Text = mockData[i].description
     end for
     return data
-end function
-
-function onFocusChanged() as void
-    print "Focus on item: " + stri(m.characterMarkupList.itemFocused)
-    print "Focus on item: " + stri(m.characterMarkupList.itemUnfocused) + " lost"
 end function
 
 function onKeyEvent(key as String, press as Boolean) as Boolean

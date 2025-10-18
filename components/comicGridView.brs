@@ -12,10 +12,10 @@ function focusChanged()
 end function
 
 function onKeyEvent(key as string, press as boolean) as boolean
-    ? "CharacterViewScene->onKey->" + key
+    handled = false
+
     if key = "BACK"
-        ? "BACK"
-        return true
+        handled = true
     end if
-    return false
+    return handled
 end function
